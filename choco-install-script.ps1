@@ -30,6 +30,7 @@ $Programms = @(
     "openjdk"
     "sharex"
     "nextcloud-client"
+    "virtualbox"
 
 # DEVOPS
     "winscp"
@@ -66,6 +67,8 @@ foreach ($Prog in $Programms) {
 }
 
 choco feature disable -n allowGlobalConfirmation
+
+wsl --install
 
 ##################################################################################################
 # Remove Windows Trash
