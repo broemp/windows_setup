@@ -42,6 +42,7 @@ $Programms = @(
     "zoom"
     "malwarebytes"
     "autohotkey"
+    "thunderbird"
 
 # Browsers
     "googlechrome"
@@ -65,7 +66,7 @@ foreach ($Prog in $Programms) {
 
 choco feature disable -n allowGlobalConfirmation
 
-
+##################################################################################################
 # Remove Windows Trash
 $Bloatware = @(
 
@@ -199,6 +200,9 @@ $Paint3Dstuff = @(
 }
 
 Write-Host "Finished Debloating" -ForegroundColor Green
+
+
+##################################################################################################
 
 Write-Host "Disabling Telemetry..."
     Set-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\DataCollection" -Name "AllowTelemetry" -Type DWord -Value 0
