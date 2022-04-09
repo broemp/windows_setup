@@ -43,6 +43,7 @@ $Programms = @(
     "malwarebytes"
     "autohotkey"
     "thunderbird"
+    "mattermost-desktop"
 
 # Browsers
     "googlechrome"
