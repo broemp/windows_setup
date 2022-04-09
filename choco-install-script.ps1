@@ -15,47 +15,55 @@ if(-not(test-path "C:\ProgramData\chocolatey\choco.exe")){
 }
 
 
-# Write-Output "Installing apps" -ForegroundColor Green
+Write-Output "Installing apps" -ForegroundColor Green
 
-# Write-Output "Configure chocolatey" -ForegroundColor Green
-# choco feature enable -n allowGlobalConfirmation
+Write-Output "Configure chocolatey" -ForegroundColor Green
+choco feature enable -n allowGlobalConfirmation
 
-# # DEV
-# choco install vscode
-# choco install git
-# choco install python
-# choco install golang 
-# choco install openjdk
-# choco install sharex
-# choco install nextcloud-client
 
-# # DEVOPS
-# choco install winscp
-# choco install tabby 
+$Programms = @(
+   # DEV
+    "vscode"
+    "git"
+    "python"
+    "golang "
+    "openjdk"
+    "sharex"
+    "nextcloud-client"
 
-# #Misc
-# choco install joplin 
-# choco install 7zip 
-# choco install paint.net
-# choco install zoom
-# choco install malwarebytes
-# choco install autohotkey
+# DEVOPS
+    "winscp"
+    "tabby "
 
-# # Browsers
-# choco install googlechrome
-# choco install firefox
+#Misc
+    "joplin "
+    "7zip "
+    "paint.net"
+    "zoom"
+    "malwarebytes"
+    "autohotkey"
 
-# #Driver
-# choco install geforce-experience
+# Browsers
+    "googlechrome"
+    "firefox"
 
-# # 4Fun
-# choco install spotify 
-# choco install discord
-# choco install vlc
-# choco install steam-client
-# choco install reflector-4
+#Driver
+    "geforce-experience"
 
-# choco feature disable -n allowGlobalConfirmation
+# 4Fun
+    "spotify "
+    "discord"
+    "vlc"
+    "steam-client"
+    "reflector-4 "
+)
+
+foreach ($Prog in $Programms) {
+    choco install $Prog
+    Write-Host "Trying to install $Prog."
+}
+
+choco feature disable -n allowGlobalConfirmation
 
 
 # Remove Windows Trash
