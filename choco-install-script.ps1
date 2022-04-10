@@ -22,24 +22,25 @@ choco feature enable -n allowGlobalConfirmation
 
 
 $Programms = @(
-   # DEV
+    
+#DEV
     "vscode"
     "git"
     "python"
-    "golang "
+    "golang"
     "openjdk"
     "sharex"
     "nextcloud-client"
     "virtualbox"
     "maven"
 
-# DEVOPS
+#DEVOPS
     "winscp"
     "tabby "
 
 #Misc
-    "joplin "
-    "7zip "
+    "joplin"
+    "7zip"
     "paint.net"
     "zoom"
     "malwarebytes"
@@ -48,19 +49,19 @@ $Programms = @(
     "mattermost-desktop"
     "drawio"
 
-# Browsers
+#Browsers
     "googlechrome"
     "firefox"
 
 #Driver
     "geforce-experience"
 
-# 4Fun
-    "spotify "
+#4Fun
+    "spotify"
     "discord"
     "vlc"
     "steam-client"
-    "reflector-4 "
+    "reflector-4"
 )
 
 foreach ($Prog in $Programms) {
