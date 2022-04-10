@@ -31,6 +31,7 @@ $Programms = @(
     "sharex"
     "nextcloud-client"
     "virtualbox"
+    "maven"
 
 # DEVOPS
     "winscp"
@@ -45,6 +46,7 @@ $Programms = @(
     "autohotkey"
     "thunderbird"
     "mattermost-desktop"
+    "drawio"
 
 # Browsers
     "googlechrome"
