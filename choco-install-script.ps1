@@ -33,6 +33,7 @@ $Programms = @(
     "nextcloud-client"
     "virtualbox"
     "maven"
+    "firacode"
 
 #DEVOPS
     "winscp"
