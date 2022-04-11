@@ -48,6 +48,7 @@ $Programms = @(
     "thunderbird"
     "mattermost-desktop"
     "drawio"
+    "lghub"
 
 #Browsers
     "googlechrome"
