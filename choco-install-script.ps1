@@ -64,11 +64,12 @@ $Programms = @(
     "vlc"
     "steam-client"
     "reflector-4"
+    "retroarch"
 )
 
 foreach ($Prog in $Programms) {
-    choco install $Prog
     Write-Host "Trying to install $Prog."
+    choco install $Prog
 }
 
 choco feature disable -n allowGlobalConfirmation
