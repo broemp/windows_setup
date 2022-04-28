@@ -50,6 +50,7 @@ $Programms = @(
     "mattermost-desktop"
     "drawio"
     "lghub"
+    "choco-upgrade-all-at-startup"
 
 #Browsers
     "googlechrome"
@@ -75,6 +76,22 @@ foreach ($Prog in $Programms) {
 choco feature disable -n allowGlobalConfirmation
 
 wsl --install
+
+
+##################################################################################################
+# Old Context Menu
+
+# $path = 'HKEY_CURRENT_USER\Software\Classes\CLSID\{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}\InprocServer32'
+
+# $key = try {
+#     Get-Item -Path $path -ErrorAction Stop
+# }
+# catch {
+#     New-Item -Path $path -Force
+# }
+
+# New-ItemProperty -Path $key.PSPath -Name fDenyTSConnections -Value 1
+
 
 ##################################################################################################
 # Remove Windows Trash
