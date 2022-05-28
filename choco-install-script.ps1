@@ -37,10 +37,10 @@ $Programms = @(
 
 #DEVOPS
     "winscp"
-    "tabby "
+    "tabby"
 
 #Misc
-    "joplin"
+    "notion"
     "7zip"
     "paint.net"
     "zoom"
@@ -51,6 +51,7 @@ $Programms = @(
     "drawio"
     "lghub"
     "choco-upgrade-all-at-startup"
+    "openaudible"
 
 #Browsers
     "googlechrome"
