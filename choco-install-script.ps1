@@ -51,7 +51,6 @@ $Programms = @(
     "drawio"
     "lghub"
     "choco-upgrade-all-at-startup"
-    "openaudible"
 
 #Browsers
     "googlechrome"
